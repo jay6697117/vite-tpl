@@ -5,15 +5,18 @@ module.exports = {
     node: true
   },
   extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
+  extends: ['plugin:vue/vue3-recommended'],
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
     sourceType: 'module'
   },
   plugins: ['vue', '@typescript-eslint', 'prettier'],
+  plugins: ['vue', '@typescript-eslint'],
   rules: {
     'prettier/prettier': [
-      'error',
+      // 'error',
+      'off',
       {
         semi: true,
         singleQuote: true,
