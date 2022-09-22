@@ -20,9 +20,22 @@ export {};
 //   // 类型“number”上不存在属性“length”。ts(2339)
 // }
 
-function getString(something: string | number): string | number {
-  return something.toString();
-}
+// 访问 string 和 number 的共有属性是没问题的：
+// function getString(something: string | number): string | number {
+//   return something.toString();
+// }
 
-const a = getString(111);
-console.log('a :>> ', a);
+// const a = getString(111);
+// console.log('a :>> ', a);
+// 上例中，length 不是 string 和 number 的共有属性，所以会报错。
+
+// 联合类型的变量在被赋值的时候，会根据类型推论的规则推断出一个类型：
+let myFavoriteNumber: string | number;
+myFavoriteNumber = 'seven'; //推断是string
+console.log(myFavoriteNumber.length); // 5
+myFavoriteNumber = 7;//推断是number
+console.log(myFavoriteNumber.length); // 编译时报错: 类型“number”上不存在属性“length”。ts(2339)
+
+//总结
+// 上例中，第二行的 myFavoriteNumber 被推断成了 string，访问它的 length 属性不会报错。
+// 而第四行的 myFavoriteNumber 被推断成了 number，访问它的 length 属性时就报错了

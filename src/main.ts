@@ -13,4 +13,5 @@ createApp(App).use(Antd).use(router).use(pinia).mount('#app');
 // import './demo/demo-1';
 // import './demo/demo-2';
 // import './demo/demo-3';
-import './demo/demo-4';
+// import './demo/demo-4';
+import './demo/demo-5';
