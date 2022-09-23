@@ -91,3 +91,5 @@ let tom: Person = {
   gender: 'male'
 };
 console.log('tom', tom)
+
+// 上例中，任意属性的值允许是 string，但是可选属性 age 的值却是 number，number 不是 string 的子属性，所以报错了。
