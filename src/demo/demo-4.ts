@@ -34,7 +34,7 @@ let myFavoriteNumber: string | number;
 myFavoriteNumber = 'seven'; //推断是string
 console.log(myFavoriteNumber.length); // 5
 myFavoriteNumber = 7;//推断是number
-console.log(myFavoriteNumber.length); // 编译时报错: 类型“number”上不存在属性“length”。ts(2339)
+// console.log(myFavoriteNumber.length); // 编译时报错: 类型“number”上不存在属性“length”。ts(2339)
 
 //总结
 // 上例中，第二行的 myFavoriteNumber 被推断成了 string，访问它的 length 属性不会报错。
