@@ -1,4 +1,3 @@
-/*
 import { createApp } from 'vue';
 import Antd from 'ant-design-vue';
 import App from './App.vue';
@@ -8,12 +7,3 @@ import 'ant-design-vue/dist/antd.css';
 import './style.css';
 
 createApp(App).use(Antd).use(router).use(pinia).mount('#app');
-*/
-
-// import './demo/demo-1';
-// import './demo/demo-2';
-// import './demo/demo-3';
-// import './demo/demo-4';
-// import './demo/demo-5';
-// import './demo/demo-6';
-import './demo/demo-7';
